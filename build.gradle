@@ -37,13 +37,13 @@ minecraft {
 
 repositories {
 
-    maven { url = "http://maven.covers1624.net" } // COFH Mods
-    maven { url = "http://maven.ic2.player.to/" }
-    maven { url = "http://chickenbones.net/maven/" }
-    maven { url = 'http://maven.mcmoddev.com' } // Tesla
-	maven { url = "http://dvs1.progwml6.com/files/maven" } // JEI
-    maven { url = "https://minecraft.curseforge.com/api/maven/" }
-    ivy { artifactPattern "http://www.mod-buildcraft.com/releases/BuildCraft/[revision]/[module]-[revision].[ext]" }
+    maven { url = "https://maven.covers1624.net" } // COFH Mods
+    maven { url = "https://maven.ic2.player.to" }
+    maven { url = "https://chickenbones.net/maven" }
+    maven { url = "https://maven.blamejared.com" } // Tesla
+	maven { url = "https://dvs1.progwml6.com/files/maven" } // JEI
+    maven { url = "https://minecraft.curseforge.com/api/maven" }
+    ivy { artifactPattern "https://www.mod-buildcraft.com/releases/BuildCraft/[revision]/[module]-[revision].[ext]" }
 }
 
 dependencies {
