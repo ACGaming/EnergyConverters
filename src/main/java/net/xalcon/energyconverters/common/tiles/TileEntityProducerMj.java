@@ -39,7 +39,7 @@ public class TileEntityProducerMj extends TileEntityEnergyConvertersProducer imp
 		{
 			BlockPos pos = this.pos.offset(facing);
 			TileEntity te = this.getWorld().getTileEntity(pos);
-			if(te == null) continue;
+			if(te == null || te.getBlockType().getRegistryName().equals("galacticraftcore:aluminum_wire")) continue;
 			if (te.hasCapability(MjAPI.CAP_RECEIVER, facing.getOpposite()))
 			{
 				IMjReceiver receiver = te.getCapability(MjAPI.CAP_RECEIVER, facing.getOpposite());
